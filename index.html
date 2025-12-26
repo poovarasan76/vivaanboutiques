@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Vivaan Boutiques | Clothing for Women & Kids</title>
+  <title>Vivaan Boutiques | Women & Kids Clothing</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     :root {
-      --primary: #b76e79;   /* Rose Gold */
+      --primary: #b76e79;   /* Rose tone */
       --secondary: #f8e1e7;
       --dark: #2c2c2c;
       --light: #fffafc;
@@ -26,18 +26,18 @@
       line-height: 1.6;
     }
 
+    /* HEADER */
     header {
-      padding: 20px 8%;
+      padding: 15px 8%;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
       border-bottom: 1px solid #eee;
+      background: white;
     }
 
-    header h1 {
-      color: var(--primary);
-      font-size: 28px;
-      letter-spacing: 1px;
+    header img {
+      height: 70px; /* adjust if needed */
     }
 
     header nav a {
@@ -47,31 +47,32 @@
       font-weight: 500;
     }
 
-    .hero {
-      padding: 80px 8%;
-      background: linear-gradient(to right, var(--secondary), #ffffff);
+    /* BANNER */
+    .banner {
+      position: relative;
+      width: 100%;
+      height: 420px;
+      background: url("banner.png") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      padding: 0 8%;
     }
 
-    .hero h2 {
-      font-size: 40px;
-      margin-bottom: 15px;
+    .banner-content {
+      background: rgba(255, 255, 255, 0.75);
+      padding: 30px;
+      border-radius: 6px;
+      max-width: 520px;
+    }
+
+    .banner-content h1 {
       color: var(--primary);
+      font-size: 42px;
+      margin-bottom: 10px;
     }
 
-    .hero p {
-      max-width: 600px;
+    .banner-content p {
       font-size: 18px;
-    }
-
-    .cta {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 12px 25px;
-      background: var(--primary);
-      color: white;
-      text-decoration: none;
-      border-radius: 4px;
-      font-weight: bold;
     }
 
     section {
@@ -80,7 +81,7 @@
 
     .section-title {
       font-size: 32px;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
       color: var(--primary);
     }
 
@@ -98,8 +99,8 @@
     }
 
     .card h3 {
-      margin-bottom: 10px;
       color: var(--primary);
+      margin-bottom: 10px;
     }
 
     .highlight {
@@ -118,6 +119,15 @@
     footer span {
       color: var(--primary);
     }
+
+    @media (max-width: 768px) {
+      .banner {
+        height: 320px;
+      }
+      .banner-content h1 {
+        font-size: 32px;
+      }
+    }
   </style>
 </head>
 
@@ -125,7 +135,7 @@
 
   <!-- HEADER -->
   <header>
-    <h1>Vivaan Boutiques</h1>
+    <img src="logo.png" alt="Vivaan Boutiques Logo">
     <nav>
       <a href="#about">About</a>
       <a href="#collections">Collections</a>
@@ -133,23 +143,21 @@
     </nav>
   </header>
 
-  <!-- HERO -->
-  <div class="hero">
-    <h2>Beautiful Clothing for Women & Kids</h2>
-    <p>
-      Vivaan Boutiques brings carefully curated clothing collections for women and children,
-      blending comfort, quality, and style for everyday elegance.
-    </p>
-    <a href="#collections" class="cta">View Collections</a>
+  <!-- BANNER -->
+  <div class="banner">
+    <div class="banner-content">
+      <h1>Vivaan Boutiques</h1>
+      <p>Lovingly made clothing for Women & Kids</p>
+    </div>
   </div>
 
   <!-- ABOUT -->
   <section id="about">
     <h2 class="section-title">About Vivaan Boutiques</h2>
     <p>
-      Vivaan Boutiques is built with love and care, focusing on high-quality fabrics,
-      comfortable designs, and timeless styles for women and children.
-      Our goal is to offer clothing that feels special yet practical for everyday wear.
+      Vivaan Boutiques brings thoughtfully curated clothing for women and children,
+      focusing on comfort, quality fabrics, and elegant everyday wear.
+      Each piece is chosen with care and love.
     </p>
   </section>
 
@@ -159,26 +167,17 @@
     <div class="cards">
       <div class="card">
         <h3>Women’s Wear</h3>
-        <p>
-          Elegant kurtis, casual wear, festive collections, and everyday comfort clothing
-          designed for modern women.
-        </p>
+        <p>Elegant daily wear, festive collections, and comfortable styles for modern women.</p>
       </div>
 
       <div class="card">
         <h3>Kids Wear</h3>
-        <p>
-          Soft, comfortable, and stylish clothing for kids, designed to keep them happy
-          and free to move.
-        </p>
+        <p>Soft, breathable, and stylish clothing designed for kids’ comfort and joy.</p>
       </div>
 
       <div class="card">
         <h3>Coming Soon</h3>
-        <p>
-          We plan to expand into accessories, seasonal collections,
-          and more exclusive designs.
-        </p>
+        <p>Accessories, seasonal collections, and more exclusive designs.</p>
       </div>
     </div>
   </section>
@@ -187,10 +186,10 @@
   <div class="highlight">
     <h2 class="section-title">Why Choose Us?</h2>
     <p>
-      ✔ Quality fabrics & stitching<br>
-      ✔ Comfortable designs for daily wear<br>
       ✔ Carefully curated boutique collections<br>
-      ✔ Customer-first approach
+      ✔ Quality fabrics & comfortable designs<br>
+      ✔ Customer-first approach<br>
+      ✔ Made with love and care
     </p>
   </div>
 
@@ -198,7 +197,7 @@
   <section id="contact">
     <h2 class="section-title">Contact Us</h2>
     <p>
-      📞 Phone / WhatsApp: <strong>XXXXXXXXXX</strong><br>
+      📞 Phone / WhatsApp: <strong>9025646858</strong><br>
       📧 Email: <strong>vivaanboutiques@gmail.com</strong><br>
       📍 Location: India
     </p>
